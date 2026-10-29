@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="skin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0a370" />
+      <stop offset="100%" stop-color="#c6824f" />
+    </linearGradient>
+    <linearGradient id="hoodie-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background circle with neon border -->
+  <rect width="400" height="400" rx="200" fill="url(#bg-grad)" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="url(#glow-grad)" stroke-width="4" filter="url(#glow)" opacity="0.8" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="url(#glow-grad)" stroke-width="2" />
+
+  <!-- Code ambient floating symbols in background -->
+  <text x="50" y="110" fill="#6366f1" opacity="0.35" font-family="monospace" font-size="22" font-weight="bold">&lt;/&gt;</text>
+  <text x="320" y="130" fill="#06b6d4" opacity="0.35" font-family="monospace" font-size="20" font-weight="bold">{AI}</text>
+  <text x="60" y="290" fill="#a855f7" opacity="0.3" font-family="monospace" font-size="24" font-weight="bold">#include</text>
+  <text x="315" y="280" fill="#3b82f6" opacity="0.3" font-family="monospace" font-size="22" font-weight="bold">def()</text>
+
+  <!-- Developer Silhouette / Character -->
+  <!-- Hoodie / Shoulders -->
+  <path d="M 90 380 C 95 300, 130 260, 200 260 C 270 260, 305 300, 310 380 Z" fill="url(#hoodie-grad)" />
+  <path d="M 160 260 C 180 295, 220 295, 240 260 Z" fill="#1e1b4b" opacity="0.9" />
+  
+  <!-- Hoodie drawstrings -->
+  <line x1="185" y1="275" x2="182" y2="330" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+  <line x1="215" y1="275" x2="218" y2="330" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Neck -->
+  <path d="M 175 220 L 175 265 C 185 272, 215 272, 225 265 L 225 220 Z" fill="#b97845" />
+
+  <!-- Head / Face -->
+  <ellipse cx="200" cy="180" rx="55" ry="68" fill="url(#skin-grad)" />
+
+  <!-- Hair (Modern textured crop) -->
+  <path d="M 140 160 C 138 120, 155 90, 200 90 C 245 90, 262 120, 260 160 C 250 142, 230 135, 200 135 C 170 135, 150 142, 140 160 Z" fill="#18181b" />
+  <path d="M 148 135 C 160 100, 240 100, 252 135 C 240 115, 210 110, 190 118 C 170 110, 155 120, 148 135 Z" fill="#27272a" />
+
+  <!-- Ears -->
+  <ellipse cx="144" cy="182" rx="9" ry="14" fill="#c6824f" />
+  <ellipse cx="256" cy="182" rx="9" ry="14" fill="#c6824f" />
+
+  <!-- Eyebrows -->
+  <path d="M 165 156 Q 178 152 188 156" stroke="#18181b" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M 212 156 Q 222 152 235 156" stroke="#18181b" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- Glasses (Modern tech frames) -->
+  <rect x="156" y="162" width="34" height="24" rx="7" fill="rgba(255,255,255,0.08)" stroke="#6366f1" stroke-width="3" />
+  <rect x="210" y="162" width="34" height="24" rx="7" fill="rgba(255,255,255,0.08)" stroke="#6366f1" stroke-width="3" />
+  <line x1="190" y1="172" x2="210" y2="172" stroke="#6366f1" stroke-width="3" />
+  <line x1="145" y1="170" x2="156" y2="171" stroke="#6366f1" stroke-width="2.5" />
+  <line x1="244" y1="171" x2="255" y2="170" stroke="#6366f1" stroke-width="2.5" />
+
+  <!-- Eyes behind glasses -->
+  <circle cx="173" cy="173" r="4.5" fill="#18181b" />
+  <circle cx="227" cy="173" r="4.5" fill="#18181b" />
+  <circle cx="174.5" cy="171.5" r="1.5" fill="#ffffff" />
+  <circle cx="228.5" cy="171.5" r="1.5" fill="#ffffff" />
+
+  <!-- Nose -->
+  <path d="M 200 178 L 197 195 L 204 195" stroke="#a06030" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Confident Smile -->
+  <path d="M 184 210 Q 200 223 216 210" stroke="#6e3717" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Tech badge / AI node glow near chest -->
+  <circle cx="200" cy="335" r="14" fill="#06b6d4" opacity="0.25" filter="url(#glow)" />
+  <circle cx="200" cy="335" r="6" fill="#22d3ee" />
+</svg>
